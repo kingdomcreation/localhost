@@ -8,7 +8,7 @@ if( $index == 'contact' ){
     $data['error'] = "Email field is required";
     return $form;
   }
-  if( !filter_var($email,FILTER_VALIDATE_EMAIL) ){
+  if( !filter_var($form['email'],FILTER_VALIDATE_EMAIL) ){
     $data['error'] = "Must be a valid email";
     return $form;
   }
@@ -16,5 +16,7 @@ if( $index == 'contact' ){
 
 
 if( $index == 'contact' && $action == 'new'){
-  header('Location: index.php?status=success');
+  //header('Location: index.php?status=success');
+  $data['status'] = 'success';
+  return true;
 }

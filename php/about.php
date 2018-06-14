@@ -6,5 +6,7 @@ $data['about'] = "This is cool!";
 index($data,'contact');
 ?>
 <script>
-  var data = <?php echo json($data); ?>;
+if(typeof window.client == 'function'){
+client('data',<?php echo json_encode($data); ?>);
+}
 </script>
