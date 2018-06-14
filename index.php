@@ -1,7 +1,12 @@
-<?php define('PHP_','php/');
-include(PHP_.'functions.php');
+<?php define('PHP_','php/'); include(PHP_.'functions.php'); 
 $index = 'index';
 $title = "";
-include(PHP_.'header.php');
-include(PHP_.$index.'.php');
-include(PHP_.'footer.php');
+$data['title'] = "Project name";
+function index(&$data=['title'=>""]){
+  global $index;
+  extract($data);
+  include(PHP_.'header.php');
+  include(PHP_.$index.'.php');
+  include(PHP_.'footer.php');
+}
+index($data);
