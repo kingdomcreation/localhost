@@ -5,7 +5,13 @@ function slug(){
 }
 
 function index(&$data=['title'=>""],$include=''){
-  global $index;
+  global $index,$action;
+  if(isset($action)){
+    $post = include('php/form-handler.php');
+    if( isset($post) ){
+      extract($post);
+    }
+  }
   extract($data);
   if($include==''){
     include(PHP_.'header.php');

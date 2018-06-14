@@ -12,4 +12,8 @@ if(isset($pages[$_GET['p']])){
 }
 $title = $data['title'] = $pages[$index];
 
+if( isset($_POST['action']) ){
+	$action = isset($pages[$index.'/'.$_POST['action']])?$_POST['action']:FALSE;
+}
+
 index($data);
