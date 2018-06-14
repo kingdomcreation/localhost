@@ -21,3 +21,10 @@ function index(&$data=['title'=>""],$include=''){
     include(PHP_.$include.'.php');
   }
 }
+
+function json($data){
+    if(!headers_sent()){
+        header('Content-Type: application/json');
+    }
+    return json_encode($data);
+}

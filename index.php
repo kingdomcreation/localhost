@@ -16,4 +16,11 @@ if( isset($_POST['action']) ){
 	$action = isset($pages[$index.'/'.$_POST['action']])?$_POST['action']:FALSE;
 }
 
-index($data);
+if( isset($_GET['json']) ){
+  ob_start();
+  index($data,$index);
+  ob_end_clean();
+  echo json($data);
+}else{
+  index($data);
+}

@@ -4,3 +4,7 @@
 $data['about'] = "This is cool!";
 
 index($data,'contact');
+?>
+<script>
+  var data = <?php echo json($data); ?>;
+</script>
