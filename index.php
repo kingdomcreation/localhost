@@ -21,6 +21,9 @@ if( isset($_GET['json']) ){
   index($data,$index);
   ob_end_clean();
   echo json($data);
+}else if( isset($_GET['ajax']) ){
+  $data['ajax'] = TRUE;
+  include('php/'.$index.'.php');
 }else{
   index($data);
 }
