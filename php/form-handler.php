@@ -3,9 +3,9 @@
 if( $index == 'contact' ){
   
   $form = array(
-    'email' => isset($_POST['email']) ? $_POST['email'] : '';
+    'email' => isset($_POST['email']) ? $_POST['email'] : ''
   );
-  if( empty($email) || !filter_var($email,FILTER_VALIDATE_EMAIL)){
+  if( empty($form['email']) || !filter_var($form['email'],FILTER_VALIDATE_EMAIL)){
     $data['error'] = "Missing required fields!";
   }
 }

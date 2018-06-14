@@ -3,6 +3,7 @@ $index = $data['url'] = slug();
 $pages = [
   'about'=>"About Us",
   'contact'=>"Contact Form",
+  'contact/new'=>'New Message',
   'index'=>"Project name"
 ];
 if(isset($pages[$_GET['p']])){
