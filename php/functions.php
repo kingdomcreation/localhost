@@ -12,6 +12,6 @@ function index(&$data=['title'=>""],$include=''){
     include(PHP_.'main.php');
     include(PHP_.'footer.php');
   }else{
-    include(PHP_.$index.'.php');
+    include(PHP_.$include.'.php');
   }
 }

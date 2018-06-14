@@ -1,0 +1,12 @@
+{"files":[
+  "php/functions.php", 
+  "php/header.php",
+  "php/main.php",
+  "php/footer.php",
+  "index.php",
+  "css/style.css",
+  "js/main.js",
+  "php/contact.php",
+  "php/form-handler.php",
+  "php/about.php"
+]}

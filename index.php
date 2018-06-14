@@ -5,8 +5,10 @@ $pages = [
   'contact'=>"Contact Form",
   'index'=>"Project name"
 ];
-if(!isset($pages[$index])){
-  $index = 'index'; 
+if(isset($pages[$_GET['p']])){
+  $index = $_GET['p']; 
+}else{
+  $index = empty($index)?'index':$index;
 }
 $title = $data['title'] = $pages[$index];
 
