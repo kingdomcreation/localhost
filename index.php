@@ -1,7 +1,7 @@
-<?php 
-include('php/functions.php');
+<?php define('PHP_','php/');
+include(PHP_.'functions.php');
 $index = 'index';
 $title = "";
-include('php/header.php');
-include('php/'.$index.'.php');
-include('php/footer.php');
+include(PHP_.'header.php');
+include(PHP_.$index.'.php');
+include(PHP_.'footer.php');
