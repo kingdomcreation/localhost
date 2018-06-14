@@ -13,7 +13,11 @@ function index(&$data=['title'=>""],$include=''){
     }
   }
   extract($data);
-  if($include==''){
+  if($include===FALSE){
+    ob_start();
+    index($data,$index);
+    return ob_get_clean();
+  }else if($include==''){
     include(PHP_.'header.php');
     include(PHP_.'main.php');
     include(PHP_.'footer.php');
