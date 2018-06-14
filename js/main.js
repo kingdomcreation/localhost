@@ -8,10 +8,6 @@ console.log('main.js loaded');
         };
         if( a[0] === 'init'){
           console.log('init was called');
-          $.ajax({
-            url: "/js/ajax.js",
-            dataType: "script",
-          });
         };
     }
 })(window,'client');

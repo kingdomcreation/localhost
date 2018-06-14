@@ -13,6 +13,7 @@
     <?php index($data,$index); ?>
   </div>
   <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/js/ajax.js"></script>
   <script>
   client('send',<?php echo json($data) ?>);
   client('init');
