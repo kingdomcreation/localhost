@@ -9,7 +9,7 @@ $pages = [
   'index'=>"Project name"
 ];
 
-if(isset($pages[$_GET['p']])){
+if(isset($_GET['p']) && isset($pages[$_GET['p']])){
   $index = $_GET['p']; 
 }else{
   $index = empty($index)?'index':$index;
