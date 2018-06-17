@@ -1,4 +1,5 @@
 body{
+  background-color: #C4C4C4;
   font-family: sans-serif;
 }
 .container{ 
@@ -6,6 +7,4 @@ body{
   margin: 0px auto;
 }
 .error{
-  opacity: 0.5;
-  font-size: 70%;
 }

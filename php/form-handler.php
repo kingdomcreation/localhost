@@ -16,7 +16,6 @@ if( $index == 'contact' ){
 
 
 if( $index == 'contact' && $action == 'new'){
-  //header('Location: index.php?status=success');
   $data['status'] = 'success';
-  return true;
+  return redirect($data);
 }

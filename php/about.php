@@ -3,7 +3,7 @@
 <?php
 $data['about'] = "This is cool!";
 
-index($data,'contact');
+index($data,'table');
 ?>
 <script>
 if(typeof window.client == 'function'){
