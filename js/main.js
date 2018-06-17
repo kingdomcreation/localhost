@@ -1,5 +1,14 @@
 console.log('main.js loaded');
 
+function bs_alert(error){
+  return `
+  <div class="alert alert-danger error" role="alert">
+    `+ error + `
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>`;
+}
 (function(w,k){
     while( a = w[k].q.pop() ){
         if( a[1] ){

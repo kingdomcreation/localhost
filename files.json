@@ -8,5 +8,9 @@
   "js/main.js",
   "php/contact.php",
   "php/form-handler.php",
-  "php/about.php"
+  "php/about.php",
+  "php/card.php",
+  "php/modal.php",
+  "php/table.php",
+  "js/ajax.js",
 ]}
