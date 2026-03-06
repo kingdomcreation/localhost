@@ -13,4 +13,6 @@
   "php/modal.php",
   "php/table.php",
   "js/ajax.js",
+],"images":[
+  "images/empty.gif"
 ]}

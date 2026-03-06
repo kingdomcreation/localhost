@@ -2,6 +2,10 @@
 
 $index = $data['url'] = slug();
 
+if('logout' == $index){
+  // Destroy session & redirect
+  header('Location: /');
+}
 $pages = [
   'about'=>"About Us",
   'contact'=>"Contact Form",
