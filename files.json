@@ -1,18 +1,18 @@
 {"files":[
   "php/functions.php", 
-  "php/header.php",
-  "php/main.php",
-  "php/footer.php",
-  "index.php",
-  "css/style.css",
-  "js/main.js",
-  "php/contact.php",
-  "php/form-handler.php",
-  "php/about.php",
-  "php/card.php",
-  "php/modal.php",
-  "php/table.php",
-  "js/ajax.js",
+  "php/web/ui/header.php",
+  "php/web/ui/main.php",
+  "php/web/ui/footer.php",
+  "public/index.php",
+  "public/css/style.css",
+  "public/js/main.js",
+  "php/web/contact.php",
+  "php/web/form-handler.php",
+  "php/web/about.php",
+  "php/web/ui/card.php",
+  "php/web/ui/modal.php",
+  "php/web/ui/table.php",
+  "public/js/ajax.js"
 ],"images":[
-  "images/empty.gif"
+  "public/images/empty.gif"
 ]}

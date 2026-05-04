@@ -12,7 +12,6 @@ $pages = [
     "contact" => "Contact Form",
     "contact/new" => "New Message",
     "contact/form" => "New Message",
-    "contact/form/new" => "New Message",
     "index" => "Project name",
 ];
 
@@ -28,7 +27,7 @@ if (isset($_POST["action"])) {
 }
 
 if (isset($action)) {
-    $form = include PHP_ . $index . "-handler.php";
+    $form = include PHP_ . "web/". $index . "-handler.php";
     if (is_array($form)) {
         $data = array_merge($data, $form);
     }
